@@ -1,0 +1,24 @@
+<web-app>
+    <display-name>Wink demo</display-name>
+    <description>Demonstration of SDK features</description>
+ 
+    <!-- Wink SDK servlet configuration. 
+        This servlet handles HTTP requests
+        of SDK web service on application server.-->
+                 
+    <servlet>
+        <servlet-name>restSdkService</servlet-name>
+        <servlet-class>
+            org.apache.wink.server.internal.servlet.RestServlet
+        </servlet-class>
+        <init-param>
+            <param-name>applicationConfigLocation</param-name>
+            <param-value>/WEB-INF/application</param-value>
+        </init-param>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>restSdkService</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+</web-app>

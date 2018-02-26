@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="1.0">
+    <info organisation="com.rasp.data" module="data" revision="1.0" status="integration">
+    </info>
+    <configurations/>       
+ 
+    <publications/>
+    <dependencies>
+		<dependency org="rasp.web" name="ivy-api" rev="1.0"/>
+    </dependencies>
+</ivy-module>

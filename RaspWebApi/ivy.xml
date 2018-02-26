@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<ivy-module version="2.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+ <info organisation="rasp.web" module="ivy-api" status="integration" revision="1.0" >
+ </info>
+ 
+
+
+ <dependencies>
+  	<dependency org="commons-lang" name="commons-lang" rev="2.6" />
+     <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency org="com.google.guava" name="guava" rev="16.0.1"/>
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency org="log4j" name="log4j" rev="1.2.17"/>
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+        <dependency org="com.sun.jersey" name="jersey-client" rev="1.18.3"/>
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+        <dependency org="com.sun.jersey" name="jersey-core" rev="1.18.3"/>
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-multipart -->
+        <dependency org="com.sun.jersey.contribs" name="jersey-multipart" rev="1.18.3"/>
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
+        <dependency org="com.sun.jersey" name="jersey-server" rev="1.18.3"/>
+        <dependency org="org.springframework" name="org.springframework.web" rev="3.2.0.RELEASE" />
+        <dependency org="javax.inject" name="javax.inject" rev="1" />
+        <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+		<dependency org="javax.validation" name="validation-api" rev="1.1.0.Final"/>
+        <dependency org="junit" name="junit" rev="4.11" />
+        <dependency org="org.springframework" name="spring-test" rev="2.5"/>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j -->
+		<dependency org="org.apache.logging.log4j" name="log4j" rev="2.8.2">		
+    		<artifact name="log4j" type="pom" ext="pom"/>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+		<dependency org="javax.ws.rs" name="javax.ws.rs-api" rev="2.0"/>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet -->
+		<dependency org="com.sun.jersey" name="jersey-servlet" rev="1.19"/>
+
+   
+
+         
+        
+ </dependencies>
+</ivy-module>

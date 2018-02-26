@@ -1,0 +1,10 @@
+<project name="RaspWebApi" default="resolve" xmlns:ivy="antlib:org.apache.ivy.ant">
+	<ivy:settings file="ivysetting.xml"/>
+	
+	
+ <target name="resolve" description="resolve dependencies with ivy"> 	
+  <ivy:retrieve  /> 	
+ </target>
+	
+	
+</project>

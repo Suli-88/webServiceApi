@@ -1,0 +1,18 @@
+<project name="RaspWebApi" default="resolve" xmlns:ivy="antlib:org.apache.ivy.ant">
+	<ivy:settings file="ivysetting.xml"/>
+	<target name="resolve" description="resolve dependencies with ivy">
+	  <ivy:resolve />
+		<war destfile = "fax.war" webxml = "${web.dir}/web.xml">
+		      <fileset dir = "${web.dir}/WebContent">
+		         <include name = "**/*.*"/>
+		      </fileset>
+		      
+		      <lib dir = "thirdpartyjars">
+		         <exclude name = "portlet.jar"/>
+		      </lib>
+		      
+		      <classes dir = "${build.dir}/web"/>
+		   </war>
+
+ </target>
+</project>
